@@ -57,7 +57,7 @@ check-env:
 
 # Commands that don't require conda environment
 setup:
-	zsh ./scripts/setup.sh
+	bash ./scripts/setup_linux.sh
 
 start:
 	zsh ./scripts/start.sh
