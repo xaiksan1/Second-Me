@@ -473,6 +473,7 @@ def merge_weights():
 
 @kernel2_bp.route("/convert_model", methods=["POST"])
 def convert_model():
+    logger.info(f"convert_model called with request: {request}")
     """Convert model to GGUF format"""
     try:
         # Get request parameters
@@ -524,8 +525,7 @@ def convert_model():
                 "merged_dir": merged_model_dir,
                 "gguf_path": gguf_path
             },
-            message="Model conversion task started"
-        ))
+
 
     except Exception as e:
         error_msg = f"Failed to start model conversion: {str(e)}"

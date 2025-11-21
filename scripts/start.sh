@@ -109,6 +109,7 @@ check_setup_complete() {
 
 # Main function to start services
 start_services() {
+    source $HOME/miniconda/etc/profile.d/conda.sh
     log_section "STARTING SERVICES"
     
     # Parse arguments
@@ -121,6 +122,14 @@ start_services() {
         shift
     done
     
+    # Initialize conda environment
+    log_info "Initializing conda environment..."
+    local conda_cmd
+    if ! conda_cmd=$(try_source_conda_sh_all); then
+        log_error "Failed to initialize conda environment"
+        return 1
+    fi
+
     # Check if setup is complete
     if ! check_setup_complete; then
         return 1

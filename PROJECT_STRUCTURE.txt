@@ -1,0 +1,70 @@
+╔═══════════════════════════════════════════════════════════════╗
+║          ANIMA MUNDI - PORTFOLIO & INTEGRATIONS              ║
+║                    Structure du Projet                        ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📦 v0-integrations-page/
+│
+├── 📁 app/
+│   ├── 📄 page.tsx                      ✨ NOUVEAU - Page d'accueil
+│   ├── 📄 layout.tsx                    ✏️ MODIFIÉ - Metadata mise à jour
+│   │
+│   ├── 📁 portfolio/                    ✨ NOUVEAU DOSSIER
+│   │   └── 📄 page.tsx                  Portfolio xaiksan1
+│   │
+│   ├── 📁 alexandria-dock/              ✨ NOUVEAU DOSSIER
+│   │   └── 📄 page.tsx                  Page Alexandria Dock
+│   │
+│   ├── 📁 integrations/                 ✅ EXISTANT
+│   │   ├── 📄 page.tsx
+│   │   └── 📁 components/
+│   │
+│   └── 📁 data/
+│       └── 📄 integrations.ts
+│
+├── 📁 components/
+│   └── 📁 ui/                           Shadcn UI Components
+│
+├── 📁 public/
+│   └── 📁 images/                       ✨ Images copiées d'Animated-Portfolio
+│
+└── 📄 package.json                      ✨ + framer-motion
+
+═══════════════════════════════════════════════════════════════
+
+📦 Second-Me/
+│
+├── 🔗 portfolio-app/                    ✨ LIEN SYMBOLIQUE
+│   └── → /home/ichigo/alexandria/anima-mundi/frontend/v0-integrations-page
+│
+├── 📄 start-portfolio.sh                ✨ Script de démarrage
+├── �� QUICK_START.md                    ✨ Guide de démarrage rapide
+├── 📄 PORTFOLIO_README.md               ✨ Documentation détaillée
+├── 📄 INTEGRATION_SUMMARY.md            ✨ Résumé des changements
+└── 📄 PROJECT_STRUCTURE.txt             ✨ Ce fichier
+
+═══════════════════════════════════════════════════════════════
+
+🌐 URLS DISPONIBLES (après pnpm dev):
+
+┌─────────────────────────────────────────────────────────────┐
+│  http://localhost:3000/                - Page d'accueil     │
+│  http://localhost:3000/portfolio       - Portfolio          │
+│  http://localhost:3000/alexandria-dock - Alexandria Dock    │
+│  http://localhost:3000/integrations    - Intégrations       │
+└─────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+
+🛠️ TECHNOLOGIES:
+
+  ⚛️  Next.js 15.2.4         🎨 TailwindCSS
+  📘 TypeScript              ✨ Framer Motion
+  🎭 Shadcn UI               🎯 Lucide Icons
+  📦 pnpm                    ⚡ React 19
+
+═══════════════════════════════════════════════════════════════
+
+✅ INTÉGRATION COMPLÈTE!
+
+Tout est prêt pour l'utilisation depuis Second-Me

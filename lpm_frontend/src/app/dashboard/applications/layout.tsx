@@ -5,6 +5,14 @@ import { EVENT } from '@/utils/event';
 import { Modal } from 'antd';
 import { useEffect, useState } from 'react';
 
+/**
+   * Renders the applications layout, managing the visibility of registration and publishing modals.
+   * 
+   * @param {Object} props - Component properties.
+   * @param {React.ReactNode} props.children - The child components to be rendered within the layout.
+   * @returns {JSX.Element} The rendered layout component.
+   * @throws {Error} Throws an error if event listeners fail to add or remove.
+   */
 export default function ApplicationsLayout({ children }: { children: React.ReactNode }) {
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   const [showPublishModal, setShowPublishModal] = useState(false);
